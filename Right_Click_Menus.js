@@ -1,8 +1,8 @@
-//----Alter context menus that appear in right click (browser and lines)----
+//----  Alter Pop Up Menus that appear in Right Click (Browser and Grids)  ----
 
-//var vUSERSCTXMENU = ',' + X.CCCWSSETTINGS.USERSCTXMENU + ','; //Users that use the custom right click menu (field 'USERSCTXMENU' in Custom Settings Memory Table 'CCCWSSETTINGS')
+//var vUSERSCTXMENU = ',' + X.CCCWSSETTINGS.USERSCTXMENU + ','; //Custom Right Click Menu will be available only to users added in field 'USERSCTXMENU' (from Custom Memory Table 'CCCWSSETTINGS')
 //var vSALSERIESCONV = ',' + X.CCCWSSETTINGS.SALSERIESCONV + ','; //Series that use custom conversion
-//var vUSER = ',' + X.SYS.USER + ',';
+//var vUSER = ',' + X.SYS.USER + ',';//Login User
 
 function ON_CREATE() {
 	ChangeContextMenus(); //====  Menus must be defined in ON_CREATE event ====
