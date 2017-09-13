@@ -1,4 +1,4 @@
-//----Alter context menus that appear in right click (browser και lines)----
+//----Alter context menus that appear in right click (browser and lines)----
 
 //var vUSERSCTXMENU = ',' + X.CCCWSSETTINGS.USERSCTXMENU + ','; //Users that use the custom right click menu (field 'USERSCTXMENU' in Custom Settings Memory Table 'CCCWSSETTINGS')
 //var vSALSERIESCONV = ',' + X.CCCWSSETTINGS.SALSERIESCONV + ','; //Series that use custom conversion
