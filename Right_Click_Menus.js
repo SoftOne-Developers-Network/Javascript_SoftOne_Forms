@@ -18,10 +18,10 @@ function ChangeContextMenus() {
 	
 		//Add new values in StringList
 		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '-=-');	
-		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707192=1;Customer Financial Data');	
-		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707193=1;Run DLL Form');
-		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '-=-');		
-		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707194=3;Item Availability');		
+		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707192=Customer Financial Data'); //MenuItem is displayed when user selects only one record
+		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707193=1;Run DLL Form'); //1;--> MenuItem is displayed when user selects one or more records
+		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '-=-'); //Displays separator (horizontal line)		
+		X.EXEC('CODE:PiLib.TStringsAdd', vBrowserMenu, '201707194=3;Item Availability'); //3;--> MenuItem is displayed in Browsers with Line Analysis 
 		
 		X.EXEC('CODE:SysRequest.RefreshPopupMenu', X.MODULE, 'BRMENU', 1); //Refresh pop up menu
 	//}
